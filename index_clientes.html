@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+    <style>
+        body{
+          background-image: url(img/flores.jpg);
+          
+        }
+        h1{
+            font-family:'Courier New', Courier, monospace;
+            color: maroon;
+            text-align: center;
+        }
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+            color: maroon;
+        }
+        legend{
+            color: maroon;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+            color:maroon;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btn{
+            background-color: maroon;
+            color: white;
+            cursor: pointer;
+            width: fit-content;
+            box-sizing: border-box;
+            border: 10px solid maroon;
+        }
+        .btn2{
+            background-color: maroon;
+            color: white;
+            cursor: pointer;
+            width: fit-content;
+            box-sizing: border-box;
+            border: 10px solid maroon;
+        }
+        textarea{
+            resize: none;
+            background-color: #e8b3b6;
+            color:black;
+    
+        }
+        form{
+            width: 1000px;
+        }
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            color: brown;
+        
+        
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    <h1>Prezados Clientes. Sejam Bem vindos!</h1>
+    <br>
+    <br>
+    <br>
+    <h2>Para tornar os procedimentos de compras e aumentar o seu relacionamento com a nossa loja.<br>
+         Preencha os seus dados pessoais:
+    </h2>
+    <form action="#" method="get">
+
+        <fieldset>
+
+            <legend> Dados pessoais:</legend>
+            <br>
+            <br>
+            <label for="user"> Nome Completo:</label>
+            <input type="text" id="user" size="40" required>
+            <br>
+            <br>
+            <br>
+           <label for="dt"> Data de Nascimento: </label>
+            <input type="date" id="dt" required> 
+            <br>
+            <br>
+            <br>
+           <label for="RG"> RG:</label>
+            <input type="text" id="RG" required>
+            <br>
+            <br>
+            <br>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+            </fieldset>
+            <br>
+            <fieldset>
+                <Legend>Endereço:</Legend>
+                <br>
+                <br>
+                <label for="end">Rua:</label>
+                <input type="text" id="end" size="40">
+                <br>
+                <br>
+                <br>
+                <label for="nm">Número:</label>
+                <input type="number" id="nm" size="2">
+                <br>
+                <br>
+                <br>
+                <label for="Bai"> Bairro:</label>
+                <input type="text" id="Bai" size="5">
+                <br>
+                <br>
+                <br>
+                <label for="Estado"> Estado:</label>
+                <select name="Estado">
+
+                <option value="ac"> Acre</option>
+                <option value="Al"> Alagoas</option>
+                <option value="Am"> Amazonas</option>
+                <option value="Ap"> Amapá</option>
+                <option value="Ba"> Bahia</option>
+                <option value="Ce"> Ceará</option>
+                <option value="DF"> Distrito Federal</option>
+                <option value="Es"> Espírito Santo </option>
+                <option value="GO"> Goiás</option>
+                <option value="MA"> Maranhão</option>
+                <option value="MT"> Mato Grosso</option>
+                <option value="MS"> Mato Grosso Do Sul</option>
+                <option value="MG"> Minas Gerais</option>
+                <option value="PA"> Pará</option>
+                <option value="PB"> Paraíba</option>
+                <option value="PR"> Paraná</option>
+                <option value="PE"> Pernambuco</option>
+                <option value="PI"> Piauí</option>
+                <option value="RJ"> Rio De Janeiro</option>
+                <option value="RN"> Rio Grande Do Norte</option>
+                <option value="RO"> Rondônia </option>
+                <option value="RS"> Rio Grande Do Sul</option>
+                <option value="RR"> Roraima</option>
+                <option value="SC"> Santa Catarina</option>
+                <option value="SE"> Sergipe</option>
+                <option value="SP"> São Paulo</option>
+                <option value="TO"> Tocatins</option>
+                
+                </select>
+                <br>
+                <br>
+                <br>
+                <label for="cid"> Cidade:</label>
+                <input type="text" id="cid" size="5">
+                <br>
+                <br>
+                <br>
+                <label for="cep"> CEP:</label>
+                <input type="text" id="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+               <br>
+            </fieldset>
+             <br>
+               <fieldset>
+                <legend> Login:</legend>
+                <br>
+                <br>
+                <label for="em"> Email:</label>
+                <input type="email" id="em" placeholder="meuemail@gmail.com" required>
+                <br>
+                <br>
+                <br>
+                <label for="nu"> Nome de Usuário:</label>
+                <input type="text" id="nu" size="20" required>
+                <br>
+                <br>
+                <br>
+                <label for="sen"> Senha:</label>
+                <input type="password" id="sen" size="20" required>
+                <br>
+                <br>
+                <br>
+                <label for="sen2"> Confirme a senha:</label>
+                <input type="password" id="sen2" size="20" required>
+                <br>
+                <br>
+                <br>
+               </fieldset>
+               <br>
+               <br>
+               <fieldset>
+
+                <legend> Quer deixar alguma sugestão?</legend>
+                <textarea name="msg" cols="30" rows="10" maxlength="500"></textarea>
+               </fieldset>
+               <br>
+               <br>
+
+                <input type="submit" value="enviar" class="btn">
+                <input type="reset" value="Limpar" class="btn2">
+                <br>
+                <br>
+                <a href="index.html">Voltar à página principal</a>
+
+
+
+        
+            
+
+
+
+            
+
+        
+    </form>
+    
+</body>
+</html>
